@@ -1,0 +1,3 @@
+Maria:- ¿Donde | (poner -- vos) la botella de vino? | puiste|Juan:- La | (poner) sobre la mesa. | puse
+Pedro:- ¿A que hora | (despertarse -- vos) hoy? | te despertaste| Carlos:- | (despertarse - yo) a las 7 de la mañana. | Me desperté
+Carlos:- ¿Donde | (conocerse - ustedes)? | se conocieron | Juan y Maria:- | (conocerse - nosotros) en Capital en la Plaza San Martin. | nos conocemos
