@@ -28,7 +28,8 @@
        <li class="dropdown"><a style="color: #000000;"  class="dropdown-toggle" data-toggle="dropdown" href="#">Advanced<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a target="_self" href="http://<?php echo $DNS; ?>/question/showquest.php?file=question3.txt&qtype=oneline" >Exercise 3</a></li>
-        </ul>
+            <li><a target="_self" href="http://<?php echo $DNS; ?>/question/showquest.php?file=question4.txt&qtype=twoline" >Exercise 4</a></li>
+       </ul>
         </li>
        <li class="dropdown"><a style="color: #000000;"  class="dropdown-toggle" data-toggle="dropdown" href="#">Vocabulary<span class="caret"></span></a>
           <ul class="dropdown-menu">

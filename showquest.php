@@ -10,12 +10,19 @@ $DNS = "localhost";  // "www.meta4systems.com";   //
 @$file_selected = $_GET['file'];
 @$qtype = $_GET['qtype'];    
 if (strlen($file_selected) < 1 ) { $file_selected='question.txt'; }
+if (strlen($qtype) < 1 ) { $qtype='oneline'; }
+
+
 
 require './scripts/getData.php';
 $output = getData($file_selected);
 $instructions = getInstructions($file_selected);
 
+
 require './scripts/showQuestion.php';
+
+
+
 $fulllines = explode(PHP_EOL, $output );
 $piece = explode('|', $fulllines[0]);
 $questions[] = $piece;
@@ -23,6 +30,9 @@ for ($i=1; $i<sizeof($fulllines); $i++) {
    $piece = explode('|', $fulllines[$i]);
    array_push($questions, $piece);
 }
+
+
+
 ?>
 
 
@@ -38,7 +48,8 @@ for ($i=1; $i<sizeof($fulllines); $i++) {
 
  
  function loaddata() {
-     file_selected =  '<?php echo $file_selected; ?>';    
+     file_selected =  '<?php echo $file_selected; ?>'; 
+     qtype = '<?php echo $qtype ?>';	 
 	 //alert("new load: file requested "+ file_selected);
      var data = ajaxDataRequest(file_selected);
 	 processCurrentData();
@@ -205,7 +216,7 @@ for ($i=1; $i<sizeof($fulllines); $i++) {
  
  
  function clearall() {
-    window.location ='http://<?php echo $DNS; ?>/question/showquest.php?file='+file_selected;
+    window.location ='http://<?php echo $DNS; ?>/question/showquest.php?file='+file_selected+'&qtype='+qtype;
  
  }
  
@@ -295,9 +306,11 @@ Red Cross Mark:<img src='./images/ex.jpg' />    Incorrect (try again)<br></p>
 if ($qtype == "oneline") {
 for ($i=0; $i<sizeof($questions); $i++) {
 echo showQuestion($i, $questions[$i][0], $questions[$i][1], $questions[$i][2]);
-} else {
-for ($i=0; $i<sizeof($questions); $i++) {
-echo showQuestionPair($i, $questions[$i][0], $questions[$i][1], $questions[$i][2], $questions[$i][3], $questions[$i]4], $questions[$i][5]);
+} 
+}else if ( $qtype == "twoline") {
+  for ($i=0; $i<sizeof($questions); $i++) {
+  echo showQuestionPair($i, $questions[$i][0], $questions[$i][1], $questions[$i][2], $questions[$i][3], $questions[$i][4], $questions[$i][5]);
+  }
 }
 ?>	
 </div>	
