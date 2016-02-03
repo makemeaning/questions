@@ -1,0 +1,106 @@
+above [something]|sobre  /a
+aggressive|agresivo /a
+all|todo  /a
+almost|casi
+angry | enojado/a
+antipathic|antipáthico /a
+any|cualquier
+bad|malo  /a
+bad|malo  /a   
+before (facing)|a frenta de
+before (in front of)|delante de
+best (the)|el/la major
+better|mejor
+between|entre  /a
+borring | aburrido
+broken|roto /a
+cheap (person)|tocaño
+cheap (object)|barato / a
+closed|cerrada
+cloudy|nublada
+cold | frio
+cooling | refrescante
+crafty|astuto
+depressed |deprimido
+each|cada
+egotistical|egoista
+empathetic|simpático /a
+empty|vacia
+expensive|caro
+extrovertic|extrovertido /a
+far away|lejos
+fast|rápido
+fat|gordo
+frozen|congeladas
+full  /  filled|lleno /a   relleno /a
+generous|generoso  /a
+good|bueno
+good|bueno /a
+handsome | guapo /a
+happy | feliz
+hard (dense ? difficult)|dura
+high  ?  tall|alto
+hot|caliente
+hot (weather)|caluroso
+humble|humilde
+idealistic|idealista  
+impulsive|impulsivo /a
+jumpy (high strung)|nervioso /a
+kind|amable
+large|grande
+lazy|perezoso  /a
+least|menos
+left|izquierda
+less|menos
+little|poco
+long|largo
+low|bajo
+many|múchas
+materialistic|materialistia 
+mature|madura
+modest|modesto  /a
+more|mas
+much|mucho 
+near|circa
+new|nuevo
+old|viejo /a
+on [something]|sobre  /a
+only|único /a
+open|abierta
+optimistic|optimista
+other|demás
+over (up)|arriba
+pessimist|pesimista
+pretty | lindo/a bonito/a
+rich|rico /a
+right|derecha
+same  (the)|lo mismo
+sautéed|salteado  /a
+short|corto
+short (person) | bajo
+sick|enfermos
+skinny|delgado
+slow | lento
+small|pequeño  (chica)
+sociable|sociable
+soft|suave
+some|algunos
+sporty|deportista
+straight|derecho
+strong | fuerte
+sure|cierto
+talented|talentosos  /a
+tall|alto  /a
+that|ese(m)  esa(f)
+there|allá
+this|éste(m)  ésta(f)   
+timid|tímido  /a
+tired|cansado
+under (down)|bajo
+vain|vanidoso  /a
+windy|ventoso
+workaholic|trabajador  /a
+worse|peor
+worse|peor
+worst (the)|el peor
+young|joven

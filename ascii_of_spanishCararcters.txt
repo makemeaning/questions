@@ -1,0 +1,48 @@
+<!-- BEGINN SONDERZEICHEN BUTTON CODE -->
+		<ul class="sonderzeichen-uebung">
+	<li>
+	<button class="FuncButton" onblur="FuncBtnOut(this)" onclick="Sonderzeichen('ñ')" onfocus="FuncBtnOver(this)" onmousedown="FuncBtnDown(this)" onmouseout="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseup="FuncBtnOver(this)" value="ñ">&#241;
+	</button></li>
+	<li>
+	<button class="FuncButton" onblur="FuncBtnOut(this)" onclick="Sonderzeichen('á')" onfocus="FuncBtnOver(this)" onmousedown="FuncBtnDown(this)" onmouseout="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseup="FuncBtnOver(this)" value="á">&#225;
+	</button></li>
+	<li>
+	<button class="FuncButton" onblur="FuncBtnOut(this)" onclick="Sonderzeichen('é')" onfocus="FuncBtnOver(this)" onmousedown="FuncBtnDown(this)" onmouseout="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseup="FuncBtnOver(this)" value="é">&#233;
+	</button></li>
+	<li>
+	<button class="FuncButton" onblur="FuncBtnOut(this)" onclick="Sonderzeichen('í')" onfocus="FuncBtnOver(this)" onmousedown="FuncBtnDown(this)" onmouseout="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseup="FuncBtnOver(this)" value="í">&#237;
+	</button></li>
+	<li>
+	<button class="FuncButton" onblur="FuncBtnOut(this)" onclick="Sonderzeichen('ó')" onfocus="FuncBtnOver(this)" onmousedown="FuncBtnDown(this)" onmouseout="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseup="FuncBtnOver(this)" value="ó">&#243;
+	</button></li>
+	<li>
+	<button class="FuncButton" onblur="FuncBtnOut(this)" onclick="Sonderzeichen('ú')" onfocus="FuncBtnOver(this)" onmousedown="FuncBtnDown(this)" onmouseout="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseup="FuncBtnOver(this)" value="ú">&#250;
+	</button></li>
+	<li>
+	<button class="FuncButton" onblur="FuncBtnOut(this)" onclick="Sonderzeichen('Ñ')" onfocus="FuncBtnOver(this)" onmousedown="FuncBtnDown(this)" onmouseout="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseup="FuncBtnOver(this)" value="Ñ">&#209;
+	</button></li>
+	<li>
+	<button class="FuncButton" onblur="FuncBtnOut(this)" onclick="Sonderzeichen('Á')" onfocus="FuncBtnOver(this)" onmousedown="FuncBtnDown(this)" onmouseout="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseup="FuncBtnOver(this)" value="Á">&#193;
+	</button></li>
+	<li>
+	<button class="FuncButton" onblur="FuncBtnOut(this)" onclick="Sonderzeichen('É')" onfocus="FuncBtnOver(this)" onmousedown="FuncBtnDown(this)" onmouseout="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseup="FuncBtnOver(this)" value="É">&#201;
+	</button></li>
+	<li>
+	<button class="FuncButton" onblur="FuncBtnOut(this)" onclick="Sonderzeichen('Í')" onfocus="FuncBtnOver(this)" onmousedown="FuncBtnDown(this)" onmouseout="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseup="FuncBtnOver(this)" value="Í">&#205;
+	</button></li>
+	<li>
+	<button class="FuncButton" onblur="FuncBtnOut(this)" onclick="Sonderzeichen('Ó')" onfocus="FuncBtnOver(this)" onmousedown="FuncBtnDown(this)" onmouseout="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseup="FuncBtnOver(this)" value="Ó">&#211;
+	</button></li>
+	<li>
+	<button class="FuncButton" onblur="FuncBtnOut(this)" onclick="Sonderzeichen('Ú')" onfocus="FuncBtnOver(this)" onmousedown="FuncBtnDown(this)" onmouseout="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseup="FuncBtnOver(this)" value="Ú">&#218;
+	</button></li>
+	<li>
+	<button class="FuncButton" onblur="FuncBtnOut(this)" onclick="Sonderzeichen('ü')" onfocus="FuncBtnOver(this)" onmousedown="FuncBtnDown(this)" onmouseout="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseup="FuncBtnOver(this)" value="ü">&#252;
+	</button></li>
+	<li>
+	<button class="FuncButton" onblur="FuncBtnOut(this)" onclick="Sonderzeichen('¡')" onfocus="FuncBtnOver(this)" onmousedown="FuncBtnDown(this)" onmouseout="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseup="FuncBtnOver(this)" value="¡">&#161;
+	</button></li>
+	<li>
+	<button class="FuncButton" onblur="FuncBtnOut(this)" onclick="Sonderzeichen('¿')" onfocus="FuncBtnOver(this)" onmousedown="FuncBtnDown(this)" onmouseout="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseup="FuncBtnOver(this)" value="¿">&#191;
+	</button></li>
+</ul>

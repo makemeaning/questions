@@ -1,0 +1,4 @@
+ENGLISH | SPANISH
+man | hombre
+a ' |  á
+A ' |  Á

@@ -1,0 +1,212 @@
+@CHARSET "ISO-8859-1";   /* ISO-8859-1  */
+
+
+/*------------------ inside the card ---------------*/
+.cardcss  {
+   font-family: verdana;
+   font-size: 24;
+   font-weight: bold;
+   }
+
+/*-------------  FIX DROP DOWN MENU --------------- */
+.dropdown {
+ font-family: verdana;
+ font-size: 26;
+}
+
+
+
+/*------------------ inside table cell (in grid definition)  ---------------*/
+.title  {
+   font-family: verdana;
+   font-size: 12;
+   font-weight: bold;
+   }
+   
+/*------------------ inside table cell (in grid definition)  ---------------*/
+td.inside  {
+   height: 30;
+   font-size: 11px;
+   font-family: courier new;
+   }
+
+/*------------------ inside table cell (in grid definition)  ---------------*/
+a {
+   font-family: courier new;
+   font-size: 11px;
+   }
+
+/*------------------ big black typeface  ----------------------------------*/
+.bigblack {
+   font-family: verdana, arial;
+   font-size: 24px;
+   color: black;
+   font-weight: bold;
+   }
+
+/*-------------------- big red typeface  ----------------------------------*/
+.bigred {
+   font-family: verdana, arial;
+   font-size: 24px;
+   color: red;
+   font-weight: bold;
+   }
+
+/*------------------ small typeface (11px)  --------------------------------*/
+.sml {
+   font-family: courier new;
+   font-size: 11px;
+   line-height: 87%;
+   color: green;
+   }
+a.sml:link, a.sml:visited, a.sml:active  {
+   font-family: courier new;
+   text-decoration: none;
+   font-size: 11px;
+   line-height: 87%;
+   color: green;
+   }
+a.sml:hover {
+   font-family: courier new;
+   font-size: 11px;
+   text-decoration: none;
+   line-height: 87%;
+   color: white;
+   background-color: 8888bb;
+  }
+
+/*------------------ small typeface (11px)  --------------------------------*/
+.sml2 {
+   font-family: courier new;
+   font-size: 11px;
+   line-height: 87%;
+   color: brown;
+   }
+a.sml2:link, a.sml2:visited, a.sml2:active  {
+   font-family: courier new;
+   text-decoration: none;
+   font-size: 11px;
+   line-height: 87%;
+   color: brown;
+   }
+a.sml2:hover {
+   font-family: courier new;
+   font-size: 11px;
+   text-decoration: none;
+   line-height: 87%;
+   color: white;
+   background-color: 8888bb;
+  }
+
+/*------------------ small typeface (13px) --------------------------------*/
+.xsml {
+   font-family: courier new;
+   font-size: 13px;
+   color: green;
+   }
+a.xsml:link, a.xsml:visited, a.xsml:active  {
+   font-family: courier new;
+   text-decoration: none;
+   font-size: 13px;
+   color: green;
+   }
+a.xsml:hover {
+   font-family: courier new;
+   font-size: 13px;
+   text-decoration: none;
+   color: white;
+   background-color: 8888bb;
+  }
+
+
+
+/*------------------ warning in red and bold   ----------------------------*/
+.warn {
+   color: red;
+   font-weight: 400;
+   }
+
+/*------------------ table border definition  -------------------------------*/
+table.brdr {
+  border-left-width: 1px;
+  border-top-width: 1px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-style: solid;
+  border-color: blue;
+  }
+
+/*------------------ cell border definition ---------------------------------*/
+td.brdr {
+  border-left-width: 0px;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-style: solid;
+  border-color: blue;
+  }
+
+/*------------------ PINK cell border definition ---------------------------------*/
+td.brdred {
+  border-left-width: 0px;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-style: solid;
+  border-color: blue;
+  background: pink;
+  }
+
+/*------------------ GREEN cell border definition ---------------------------------*/
+td.brdgreen {
+  border-left-width: 0px;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-style: solid;
+  border-color: blue;
+  background: lightgreen;
+  }
+
+
+
+/*------------------ heavey table border definition  ------------------------*/
+table.brdrh {
+  border-left-width: 4px;
+  border-top-width: 4px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-style: solid;
+  border-color: blue;
+  }
+
+/*------------------ heavy cell bottom border definition --------------------*/
+td.brdrhb {
+  border-left-width: 0px;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 4px;
+  border-style: solid;
+  border-color: blue;
+  }
+
+/*------------------ heavy cell right border definition --------------------*/
+td.brdrhr {
+  border-left-width: 0px;
+  border-top-width: 0px;
+  border-right-width: 4px;
+  border-bottom-width: 1px;
+  border-style: solid;
+  border-color: blue;
+  }
+
+/*------------------ heavy cell bottom & right border definition ------------*/
+td.brdrhbr {
+  border-left-width: 0px;
+  border-top-width: 0px;
+  border-right-width: 4px;
+  border-bottom-width: 4px;
+  border-style: solid;
+  border-color: blue;
+  }
+
