@@ -96,22 +96,22 @@ for ($i=1; $i<sizeof($fulllines); $i++) {
  
     
  function changeimages() {
- 	 var data = ajaxDataRequest('<?php echo $file_selected; ?>');
-	 processCurrentData();
-	 data = localStorage.allContent;
-	 answers = processCurrentData(data);
+ 
+     ajaxDataRequest('<?php echo $file_selected; ?>');
+ 
+     answers = processCurrentData(); 
 	 var correctAnswer = "";
 	 var x = "";
-     var answer = []	 
+     var answer = []	
+	 var answer2= []
+	 
      for (i=0; i<questions.length; i++) {
+	 
+	   if (questions[i].length == 3 ) {
+	 
 	   pixid = 'pix'+i;
-      // document.getElementById(pixid).src = './images/ex.jpg';
-
-	   // start getting the text in a text box
 	   ansid = 'ans'+i;
 	   answer[i] = document.getElementById(ansid).value;
-	   
-	   //alert("answer for "+ansid+" is "+answer[i] );  
 	   answer[i] = answer[i].trim();
 	   questions[i][2] = questions[i][2].trim();
 	   answer[i] = answer[i].toLowerCase();
@@ -121,35 +121,94 @@ for ($i=1; $i<sizeof($fulllines); $i++) {
          document.getElementById(pixid).src = './images/clear.png';
 	   }  else 
  	   if (answer[i] == questions[i][2]) {
-	     // alert(answer[i]+" IS CORRECT");
          document.getElementById(pixid).src = './images/check.png';
 		} else
 		 if (stripVowelAccent(answer[i]) == stripVowelAccent(questions[i][2])) {
-	     // alert(answer[i]+" IS  ALMOST CORRECT");
-         document.getElementById(pixid).src = './images/questicon.png';
+        document.getElementById(pixid).src = './images/questicon.png';
 		  }   
 		  else {
-		 // alert(answer[i]+" IS WRONG");
           document.getElementById(pixid).src = './images/ex.jpg';
 		  }
 	   
        // create a new complete sentense
 	   stripped1 = removeParenthesis(questions[i][1]);
 	   stripped0 = removeParenthesis(questions[i][0]);
-	   //alert(stripped);
 	   correctAnswer = "<br>"+stripped0+questions[i][2]+stripped1;
-	   //alert(correctAnswer);
 	   x = document.getElementById(i.toString()).innerHTML;	
-	   //alert(x);
 	   x = removeCorrectLine(x);
 	   x = removeBR(x);
 	   x = x + correctAnswer;
+	   
 	   document.getElementById(i.toString()).innerHTML = x;
    
-	   
 	   // restore the answer
 	   document.getElementById(ansid).value =  answer[i];
 	   
+	   }  else {   // this is a two line question type
+	   
+	   pixid = 'pix'+i;
+	   pixid2 = 'pix2'+i;
+	   ansid = 'ans'+i;
+	   ansid2 = 'ans2'+i;
+	   
+	   answer[i] = document.getElementById(ansid).value;
+	   answer[i] = answer[i].trim();
+	   questions[i][2] = questions[i][2].trim();
+	   answer[i] = answer[i].toLowerCase();
+	   questions[i][2] = questions[i][2].toLowerCase();
+	   
+	   if (answer[i] == "" ) {
+         document.getElementById(pixid).src = './images/clear.png';
+	   }  else 
+ 	   if (answer[i] == questions[i][2]) {
+         document.getElementById(pixid).src = './images/check.png';
+		} else
+		 if (stripVowelAccent(answer[i]) == stripVowelAccent(questions[i][2])) {
+        document.getElementById(pixid).src = './images/questicon.png';
+		  }   
+		  else {
+          document.getElementById(pixid).src = './images/ex.jpg';
+		  }
+
+	   answer2[i] = document.getElementById(ansid2).value;
+	   answer2[i] = answer2[i].trim();
+	   questions[i][5] = questions[i][5].trim();
+	   answer2[i] = answer2[i].toLowerCase();
+	   questions[i][5] = questions[i][5].toLowerCase();
+	   
+	   if (answer2[i] == "" ) {
+         document.getElementById(pixid2).src = './images/clear.png';
+	   }  else 
+ 	   if (answer2[i] == questions[i][5]) {
+         document.getElementById(pixid2).src = './images/check.png';
+		} else
+		 if (stripVowelAccent(answer2[i]) == stripVowelAccent(questions[i][5])) {
+        document.getElementById(pixid2).src = './images/questicon.png';
+		  }   
+		  else {
+          document.getElementById(pixid2).src = './images/ex.jpg';
+		  }
+
+		  
+       // create a new complete sentense
+	   stripped1 = removeParenthesis(questions[i][1]);
+	   stripped0 = removeParenthesis(questions[i][0]);
+   	   stripped4 = removeParenthesis(questions[i][4]);
+	   stripped3 = removeParenthesis(questions[i][3]);
+
+	   correctAnswer = "<br>"+stripped0+questions[i][2]+stripped1+"<br>"+stripped3+questions[i][5]+stripped4;
+	   x = document.getElementById(i.toString()).innerHTML;	
+	   x = removeCorrectLine2(x);
+	   x = x + correctAnswer;
+	   
+	   document.getElementById(i.toString()).innerHTML = x;
+   
+	   // restore the answer
+	   document.getElementById(ansid).value =  answer[i];   
+	   document.getElementById(ansid2).value =  answer2[i];   
+	   
+	   
+	   }  // end a two line question 
 	   
  	 }  
   } 
@@ -160,6 +219,13 @@ for ($i=1; $i<sizeof($fulllines); $i++) {
 	 return shortened;
 	  }
 
+ function removeCorrectLine2(innerhtml) {
+     var z = innerhtml.lastIndexOf('g">');
+	 shortened = innerhtml.substr(0,z+6);
+	 return shortened;
+	  }
+	  
+	  
    function removeBR(x) {
        var l = x.length;
 	   //alert(x.substr(l-4));
@@ -287,12 +353,11 @@ section {
 <div class='box' >	
     <br><span><b>Instructions</b></span>
 <p><?php echo $instructions ?><central><img src='./images/line.jpg' width='650px' height='3px' /></central><br>
-Click "Check Your Answers" at any time.  The completed sentence will appear below
-each test sentence.<br>For sentences with an answer, an icon will appear. 
-Click the Restart Button to clear all.<br>
+Click "Check Your Answers" at any time.  Click the Restart Button to clear all.<br>
 Green Check Mark:<img src='./images/check.png' />    Correct<br>
-Question Mark:<img src='./images/questicon.png' />    Some letters need an accent mark<br>
-Red Cross Mark:<img src='./images/ex.jpg' />    Incorrect (try again)<br></p>
+Red Cross Mark:<img src='./images/ex.jpg' />    Incorrect (try again)<br>
+Question Mark:<img src='./images/questicon.png' />    Some letters need an accent mark<br></p>
+
 </div></center>
 <center>
 <input type='button' value='Check Your Answers'  onClick='changeimages();' />
